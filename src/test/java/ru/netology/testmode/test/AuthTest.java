@@ -28,7 +28,7 @@ class AuthTest {
         $("button.button").click();
         $("h2")
                 .shouldHave(Condition.exactText("Интернет банк"))
-                .shouldBe((Condition.visible));
+                .shouldBe(Condition.visible);
     }
 
     @Test
