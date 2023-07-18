@@ -38,7 +38,7 @@ class AuthTest {
         $("button.button").click();
         $("[data-test-id='error-notification'] .notification__content")
                 .shouldHave(Condition.text("Ошибка! Неверно указан логин или пароль"))
-                .shouldBe((Condition.visible));
+                .shouldBe(Condition.visible);
     }
 
     @Test
@@ -50,7 +50,7 @@ class AuthTest {
         $("button.button").click();
         $("[data-test-id='error-notification'] .notification__content")
                 .shouldHave(Condition.text("Ошибка! Пользователь заблокирован"))
-                .shouldBe((Condition.visible));
+                .shouldBe(Condition.visible);
     }
 
     @Test
@@ -63,7 +63,7 @@ class AuthTest {
         $("button.button").click();
         $("[data-test-id='error-notification'] .notification__content")
                 .shouldHave(Condition.text("Ошибка! Неверно указан логин или пароль"))
-                .shouldBe((Condition.visible));
+                .shouldBe(Condition.visible);
     }
 
     @Test
@@ -76,6 +76,6 @@ class AuthTest {
         $("button.button").click();
         $("[data-test-id='error-notification'] .notification__content")
                 .shouldHave(Condition.text("Ошибка! Неверно указан логин или пароль"))
-                .shouldBe((Condition.visible));
+                .shouldBe(Condition.visible);
     }
 }
